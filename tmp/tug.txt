@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[a4paper,twoside=FALSE,top=-12mm,bottom=0mm,left=-5mm,right=0mm]{geometry}
+\usepackage{pstricks,pstcol,pst-grad,pst-3d,pst-eps}
+
+\pagestyle{empty} 
+
+\newpsobject{showgrid}{psgrid}{subgriddiv=1,griddots=10,gridlabels=10pt}
+
+\begin{document}
+  \begin{pspicture}(0,0)(21,29.7) %%\showgrid
+   \psset{xunit=1mm,yunit=1mm,runit=1mm}
+
+\psframe[fillstyle=solid,fillcolor=white,linestyle=solid,linecolor=black,linewidth=.2mm](0.000 , 0.000)(210.000 , 297.000)
+\psframe[fillstyle=solid,fillcolor=white,linestyle=solid,linecolor=black,linewidth=.2mm](15.000 , 5.000)(205.000 , 292.000)
+\psframe[fillstyle=solid,fillcolor=white,linestyle=solid,linecolor=black,linewidth=.2mm](20.000 , 5.000)(205.000 , 287.000)
+\psframe[fillstyle=solid,fillcolor=white,linestyle=solid,linecolor=black,linewidth=.2mm](20.000 , 5.000)(205.000 , 65.000)
+\psframe[fillstyle=solid,fillcolor=white,linestyle=solid,linecolor=blue,linewidth=.3mm](56.000 , 113.500)(124.000 , 186.500)
+\psframe[fillstyle=solid,fillcolor=white,linestyle=solid,linecolor=blue,linewidth=.3mm](60.000 , 117.500)(120.000 , 182.500)
+\psframe[fillstyle=solid,fillcolor=white,linestyle=solid,linecolor=blue,linewidth=.3mm](82.500 , 140.000)(97.500 , 160.000)
+\psline[linestyle=solid,linecolor=blue,linewidth=.3mm](60.000 , 117.500)(82.500 , 140.000)
+\psline[linestyle=solid,linecolor=blue,linewidth=.3mm](120.000 , 182.500)(97.500 , 160.000)
+\psline[linestyle=solid,linecolor=blue,linewidth=.3mm](60.000 , 182.500)(82.500 , 160.000)
+\psline[linestyle=solid,linecolor=blue,linewidth=.3mm](120.000 , 117.500)(97.500 , 140.000)
+\psframe[fillstyle=solid,fillcolor=white,linestyle=solid,linecolor=blue,linewidth=.3mm](85.000 , 142.500)(95.000 , 157.500)
+\psline[linestyle=solid,linecolor=black,linewidth=.3mm]{|<*->|*}(129.000 , 186.500)(129.000 , 182.500)
+\uput{2.000}[0]{90}(129.000 , 184.500){\color{black}\normalsize 80}
+\psline[linestyle=solid,linecolor=black,linewidth=.3mm]{|<*->|*}(129.000 , 182.500)(129.000 , 117.500)
+\uput{2.000}[0]{90}(129.000 , 150.000){\color{black}1300}
+\psline[linestyle=solid,linecolor=black,linewidth=.3mm]{|<*->|*}(129.000 , 117.500)(129.000 , 113.500)
+\uput{2.000}[0]{90}(129.000 , 115.500){\color{black}80}
+\psline[linestyle=solid,linecolor=black,linewidth=.3mm]{|<*->|*}(56.000 , 191.500)(60.000 , 191.500)
+\uput{2.000}[90]{0}(58.000 , 191.500){\color{black}\normalsize 80}
+\psline[linestyle=solid,linecolor=black,linewidth=.3mm]{|<*->|*}(60.000 , 191.500)(120.000 , 191.500)
+\uput{2.000}[90]{0}(90.000 , 191.500){\color{black}\normalsize 1200}
+\psline[linestyle=solid,linecolor=black,linewidth=.3mm]{|<*->|*}(124.000 , 191.500)(120.000 , 191.500)
+\uput{2.000}[90]{0}(122.000 , 191.500){\color{black}\normalsize 80}
+\psline[linestyle=solid,linecolor=red,linewidth=.5mm]{|<*->|*}(55.000 , 87.250)(59.000 , 87.250)
+\uput{2.000}[90]{0}(57.000 , 87.250){\color{red}\normalsize 80}
+
+
+  \end{pspicture}
+\end{document}

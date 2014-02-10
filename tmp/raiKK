@@ -1,0 +1,7 @@
+cd /home/sarovar/arce/htmlDoc/demo/tmp
+
+cat rai001.txt layers.data  > main.data
+
+make
+./main < main.data > wt.tex
+sh run.bat

@@ -1,0 +1,18 @@
+body {
+        color: black;
+        background: #ffffcc;
+}
+
+H1 {
+	text-align: center;
+       font-size: 160%;
+}
+H2 {
+	text-align: center;
+        color: red;
+       font-size: 120%;
+}
+H3 {
+	text-align: center;
+       font-size: 100%;
+}
