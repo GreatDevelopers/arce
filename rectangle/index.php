@@ -14,6 +14,7 @@ include "includes/functions.php";
 // Normally you do not need to edit anything below this:
 // -----------------------------------------------------
 
+$currentStep = isset($_POST['currentStep']) ? $_POST['currentStep'] : '';
 
 if ( $inputType ==1 ) $rccFile = "rcc0.php" ;
 else $rccFile = "rcc0DropDown.php";

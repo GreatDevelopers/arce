@@ -8,7 +8,7 @@ $i = 0;
 
 include "../common/tableHead.php";
 
-while ($rccList[$i])
+while (isset($rccList[$i]))
 {
 
 $rccListExploded[$i] = explode(',', $rccList[$i]);
@@ -37,7 +37,7 @@ $i++;
 include "../common/tableFoot.php";
 ?>
 <br>
-<INPUT type=hidden  name=currentStep  value=1 >
+<INPUT type=hidden  name=currentStep  value="<?php echo isset($_POST['currentStep']) ? $_POST['currentStep'] : '1'; ?>">
 <center><input type='submit' name =submit value='Submit'>
 </center>
 </form>

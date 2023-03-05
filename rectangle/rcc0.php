@@ -6,7 +6,7 @@
 <?php
 include "../common/tableHead.php";
 $i = 0;
-while($rccDescription[$i])
+while(isset($rccDescription[$i]))
 {
 $rccString[$i]=" $rccDescription[$i]:  </td><td> 
 <input type=text size = 4 value=$rccDefault[$i] name=rccItem[$i]> ";
